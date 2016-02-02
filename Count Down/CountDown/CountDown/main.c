@@ -7,10 +7,16 @@
 //
 
 #include <stdio.h>
+#include <readline/readline.h>
+#include <stdlib.h>
 
 int main(int argc, const char * argv[]) {
     
-    int i = 99;
+    printf("What number should the countdown begin from?");
+    
+    const char *number = readline(NULL);
+    
+    int i = atoi(number);
     
     while (i >= 0) {
         printf("%d\n", i);

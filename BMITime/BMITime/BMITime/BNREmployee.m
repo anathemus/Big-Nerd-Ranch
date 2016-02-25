@@ -28,4 +28,17 @@
     }
 }
 
+- (float)bodyMassIndex
+{
+    // return 19.0;
+    float normalBMI = [super bodyMassIndex];
+    return normalBMI * 0.9;
+}
+
+// Override BNREmployee's description
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"<Employee %d>", self.employeeID];
+}
+
 @end

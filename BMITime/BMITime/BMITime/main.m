@@ -9,9 +9,13 @@
 #import <Foundation/Foundation.h>
 // #import "BNRPerson.h"
 #import "BNREmployee.h"
+#import "BNRAsset.h"
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
+int main(int argc, const char * argv[])
+{
+    @autoreleasepool
+    {
+        /*
         // Create an instance of BNREmployee
         BNREmployee *mikey = [[BNREmployee alloc]init];
         
@@ -37,6 +41,24 @@ int main(int argc, const char * argv[]) {
         double years = [mikey yearsOfEmployment];
         
         NSLog(@"Mikey has a BMI of %f, has worked with us for %.2f years.\n", bmi, years);
+        */
+        
+        // Create an array of BNR Employee objects
+        NSMutableArray *employees = [[NSMutableArray alloc]init];
+        
+        for (int i = 0; i < 10; i++)
+        {
+            // Create an instance of BNREmployee
+            BNREmployee *mikey = [[BNREmployee alloc]init];
+            
+            // Give the instance variables interesting values using dot notation setters
+            mikey.weightInKilos = 90 + i;
+            mikey.heightInMeters = 1.8 - i/10.0;
+            mikey.employeeID = i;
+            
+            // Put the employee in the employees array
+            [employees addObject:mikey]
+        }
     }
     return 0;
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C71BB6341C79701000337DCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C71BB6331C79701000337DCE /* main.m */; };
 		C71BB63C1C7970C500337DCE /* BNRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C71BB63B1C7970C500337DCE /* BNRPerson.m */; };
+		C73C41981C812C8800AA027B /* BNRAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = C73C41971C812C8800AA027B /* BNRAsset.m */; };
 		C78CFF431C7E0AE30036515C /* BNREmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = C78CFF421C7E0AE30036515C /* BNREmployee.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		C71BB6331C79701000337DCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C71BB63A1C7970C500337DCE /* BNRPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRPerson.h; path = ../BNRPerson.h; sourceTree = "<group>"; };
 		C71BB63B1C7970C500337DCE /* BNRPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRPerson.m; path = ../BNRPerson.m; sourceTree = "<group>"; };
+		C73C41961C812C8800AA027B /* BNRAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRAsset.h; sourceTree = "<group>"; };
+		C73C41971C812C8800AA027B /* BNRAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRAsset.m; sourceTree = "<group>"; };
 		C78CFF411C7E0AE30036515C /* BNREmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNREmployee.h; sourceTree = "<group>"; };
 		C78CFF421C7E0AE30036515C /* BNREmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNREmployee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +71,8 @@
 				C78CFF411C7E0AE30036515C /* BNREmployee.h */,
 				C78CFF421C7E0AE30036515C /* BNREmployee.m */,
 				C71BB6331C79701000337DCE /* main.m */,
+				C73C41961C812C8800AA027B /* BNRAsset.h */,
+				C73C41971C812C8800AA027B /* BNRAsset.m */,
 			);
 			path = BMITime;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				C78CFF431C7E0AE30036515C /* BNREmployee.m in Sources */,
 				C71BB6341C79701000337DCE /* main.m in Sources */,
 				C71BB63C1C7970C500337DCE /* BNRPerson.m in Sources */,
+				C73C41981C812C8800AA027B /* BNRAsset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

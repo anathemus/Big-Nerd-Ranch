@@ -57,8 +57,32 @@ int main(int argc, const char * argv[])
             mikey.employeeID = i;
             
             // Put the employee in the employees array
-            [employees addObject:mikey]
+            [employees addObject:mikey];
         }
+        
+        // Create 10 assets
+        for (int i = 0; i < 10; i++)
+        {
+            // Create an asset
+            BNRAsset *asset = [[BNRAsset alloc]init];
+            
+            // Give it an interesting label
+            NSString *currentLabel = [NSString stringWithFormat:@"Laptop %d", i];
+            asset.label = currentLabel;
+            asset.resaleValue = 350 + i * 17;
+            
+            // Get a random number between 0 and 9 inclusive
+            NSUInteger randomIndex = random() % [employees count];
+            
+            // Find that employee
+            BNREmployee *randomEmployee = [employees objectAtIndex:randomIndex];
+            
+            // Assign the asset to the employee
+            [randomEmployee addAsset:asset];
+        }
+        NSLog(@"Employees: %@", employees);
+        NSLog(@"Giving up ownership of one employee");
+        
     }
     return 0;
 }

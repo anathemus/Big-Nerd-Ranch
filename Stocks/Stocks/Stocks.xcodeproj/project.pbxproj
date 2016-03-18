@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C73567031C7EA09600A5E6E9 /* BNRForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = C73567021C7EA09600A5E6E9 /* BNRForeignStockHolding.m */; };
 		C78CFF381C7DF3D00036515C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C78CFF371C7DF3D00036515C /* main.m */; };
 		C78CFF401C7DF6C00036515C /* BNRStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = C78CFF3F1C7DF6C00036515C /* BNRStockHolding.m */; };
 /* End PBXBuildFile section */
@@ -24,10 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C73567011C7EA09600A5E6E9 /* BNRForeignStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRForeignStockHolding.h; sourceTree = "<group>"; };
+		C73567021C7EA09600A5E6E9 /* BNRForeignStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRForeignStockHolding.m; sourceTree = "<group>"; };
 		C78CFF341C7DF3D00036515C /* Stocks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stocks; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78CFF371C7DF3D00036515C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C78CFF3E1C7DF6C00036515C /* BNRStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStockHolding.h; sourceTree = "<group>"; };
-		C78CFF3F1C7DF6C00036515C /* BNRStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStockHolding.m; sourceTree = "<group>"; };
+		C78CFF3E1C7DF6C00036515C /* BNRStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRStockHolding.h; path = ../BNRStockHolding.h; sourceTree = "<group>"; };
+		C78CFF3F1C7DF6C00036515C /* BNRStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRStockHolding.m; path = ../BNRStockHolding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +47,6 @@
 		C78CFF2B1C7DF3D00036515C = {
 			isa = PBXGroup;
 			children = (
-				C78CFF3E1C7DF6C00036515C /* BNRStockHolding.h */,
-				C78CFF3F1C7DF6C00036515C /* BNRStockHolding.m */,
 				C78CFF361C7DF3D00036515C /* Stocks */,
 				C78CFF351C7DF3D00036515C /* Products */,
 			);
@@ -63,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				C78CFF371C7DF3D00036515C /* main.m */,
+				C78CFF3E1C7DF6C00036515C /* BNRStockHolding.h */,
+				C78CFF3F1C7DF6C00036515C /* BNRStockHolding.m */,
+				C73567011C7EA09600A5E6E9 /* BNRForeignStockHolding.h */,
+				C73567021C7EA09600A5E6E9 /* BNRForeignStockHolding.m */,
 			);
 			path = Stocks;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73567031C7EA09600A5E6E9 /* BNRForeignStockHolding.m in Sources */,
 				C78CFF381C7DF3D00036515C /* main.m in Sources */,
 				C78CFF401C7DF6C00036515C /* BNRStockHolding.m in Sources */,
 			);
@@ -243,6 +249,7 @@
 				C78CFF3D1C7DF3D00036515C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
